@@ -1,21 +1,24 @@
 /*
- * Write a program that reads the integers between 1 and 100 and counts the occurrences of each. 
+ * COUNT OCCURRENCES
+ * Write a program that reads the integers between 1 and 100, 
+ * then counts and displays the occurrences of each. 
  * Assume the input ends with 0. 
- * Here is a sample run of the program: Note that if a number occurs more than one time, 
- * the plural word “times” is used in the output. Numbers are displayed in increasing order.
+ * If a number occurs more than one time, the plural word “times” is used in the output. 
+ * Numbers are displayed in increasing order.
  */
 
 import java.util.Scanner;
 
 public class CountOccurrences {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
+        
         // Create an array to store the counts for numbers 1 through 100
         // Index 0 is unused so that integers map directly to its corresponding index
         // Ex: count for number 1 maps to counts[1]
         int[] counts = new int[101];
-
+        
+        // Prompt user for numbers
+        Scanner input = new Scanner(System.in);
         System.out.println("Enter the integers between 1 and 100 (end with 0):");
 
         // Read numbers and count their occurrences
